@@ -1,2 +1,0 @@
-# crafty
-mockup site
