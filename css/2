@@ -1,0 +1,300 @@
+body{
+	margin:0;
+}
+@font-face{
+	font-family:main-font;
+	src:url(../fonts/Jaapokki-Regular.otf);
+}
+@font-face{
+	font-family:font-awesome;
+	src:url(../fonts/fontawesome-webfont.ttf);
+}
+.container{
+    margin: 0 15%;
+    height:auto;
+}
+
+/*******starting of header***********/
+
+header{
+    width:100%;
+    float:left;
+    min-height:714px;
+    background-image:url(../img/Black-Cat-eyes.jpg);
+    background-position:center top;
+    background-size:cover;
+    background-attachment:fixed;
+    z-index: 20;
+    /*filter:brightness(40%);
+    -webkit-filter:brightness(40%);
+    -moz-filter:brightness(40%);*/
+ }
+ .banner-mask{
+    width:100%;
+    float:left;
+    height:714px;
+    background:rgba(0,0,0,0.7);
+}
+ .logo{
+    display: block;
+    text-align: center;
+    margin-top: 168px;}
+.banner-mask h1{
+	color: #fff;
+    text-align: center;
+    font-size: 64px;
+    line-height: 0px;
+    margin-top: 120px;
+    font-weight: lighter;
+    font-family: main-font;
+}
+.banner-mask h1 span,.banner-mask h2 span{color:#daae19}
+.banner-mask h2{
+    text-align:center;
+    color:#fff;
+    font-family: main-font;
+    font-weight: lighter;
+}
+
+/**********end**********************/
+
+/*******starting of menu***********/
+
+nav{
+	width:100%;
+	float:left;
+	min-height:97px;
+	background:#16263f;
+}
+.menu {
+	padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 54px 0;
+
+}
+.menu li{
+	display:inline-block;
+    line-height: 26px;
+}
+.menu li a{color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	padding:0 9px;
+	display:block;
+	font-family: main-font;
+    -moz-user-select: none;
+}
+.active{
+    color:#daae19 !important;
+    transition: all 1s linear;
+}
+.active>span{
+    width: 18px !important;
+    transition: all .1s ease;
+}
+.menu li:last-child{
+    margin-left: 20px;
+    border-left: 1px solid #fff;}
+.menu li a span{
+	float: left;
+    width: 10px;
+    height: 3px;
+    margin: 17px 24px 0 0;
+    background: #daae19;
+}
+.search{
+    font-family: font-awesome !important;
+    transition: all 1s linear;
+}
+#searchbar{
+    width: 0px;
+    padding: 0px;
+    margin: 0 5px;
+    border: none;
+    transition: all .5s linear;
+}
+.search:hover #searchbar{
+    width: 60px;
+}
+.candidate{
+    height: 500px;
+    float: left;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+/*start of intro*/
+.intro{
+    direction: rtl;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.intro>h1{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.position{
+    color: #daae19;
+    font-family: main-font;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    display: block;
+}
+.underline{
+    background: #daae19;
+    width: 50px;
+    height: 4px;
+    display: block;
+}
+.intro>p{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #7b7373;
+    letter-spacing: 2px;
+}
+.intro>button{
+    padding: 10px 30px;
+    background: #16263f;
+    color: white;
+    outline-offset: 3px;
+    outline: 2px solid #16263f;
+    border: none;
+    font-family: main-font;
+    transition: all 1s linear;
+}
+.intro>button:hover {
+    background: #daae19;
+    outline-color: #daae19;
+}
+/*end of intro*/
+
+/*potrait beginning*/
+.potrait{
+    background: url('../img/img-about.jpg') no-repeat;
+    position: relative;
+    background-size: 100%;
+    min-width: 353px;
+}
+.frame-top{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-top: 4px solid #daae19;
+    border-left: 4px solid #daae19;
+    left: 40px;
+    top: 40px;
+}
+.frame-bottom{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-right: 4px solid #daae19;
+    border-bottom: 4px solid #daae19;
+    right: 40px;
+    bottom: 40px;
+}
+/*end of .potrait*/
+
+/*.talents starts*/
+.talents{
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: main-font;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.skills{
+    text-align: center;
+    margin-top: 40px;
+}
+.pctage{
+    color: #daae19;
+    font-family: main-font;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.progressbar{
+    background: #ccc;
+    width: 100%;
+    height: 4px;
+    position: relative;
+}
+.progress{
+    background: #daae19;
+    width: 40%;
+    height: 4px;
+    position: relative;
+    left:0;
+    top:0;
+}
+.design>.progressbar>.progress{
+    width: 80% !important;
+}
+.photography>.progressbar>.progress{
+    width: 65% !important;
+}
+.marketing>.progressbar>.progress{
+    width: 50% !important;
+}
+.branding>.progressbar>.progress{
+    width: 30% !important;
+}
+.social{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+}
+.social>button{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    background: #eee;
+    border: none;
+    color: #ccc;
+    font-family: fontawesome;
+    transition: all 1s linear;
+}
+.social>button:hover{
+    background: #16263f;
+    color: white;
+}
+/*end of talents*/
+
+.banner{
+    height: 150px;
+    width: 100%;
+    float: left;
+    background: #16263f;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.element{
+    width: 33%;
+    margin: 20px;
+}
+.button{
+    height: 80px;
+    width: 80px;
+    border: 1px dashed white;
+    text-align: center;
+    border-radius: 50%;
+}
+.button>i{
+    font-size: 30px;
+    margin-top: 25px;
+}
+.element>h1{
+    font-family: main-font;
+    font-size: 10px;
+    float: right;
+}
